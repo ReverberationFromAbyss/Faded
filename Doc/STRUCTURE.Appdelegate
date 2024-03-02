@@ -1,0 +1,21 @@
++-------------------------------------------------+
+| cocos2d::Application class                      |
++-------------------------------------------------+
+                  |
+                  v
++--------------------------------------------------------------+
+| AppDelegate Class                                            |
++--------------------------------------------------------------+
+| Public:                                                      |
+| AppDelegate();                                               |
+| ~AppDelegate();                                      virtual |
+| initGLContextAttrs();                     virtual void(void) |
+| applicationDidFinishLaunching();          virtual bool(void) |
+| applicationDidEnterBackground();          virtual void(void) |
+| applicationWillEnterForeground();         virtual void(void) |
++--------------------------------------------------------------+
+|                                                              |
+|                                                              |
+|                                                              |
+|                                                              |
++--------------------------------------------------------------+

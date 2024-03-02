@@ -1,0 +1,54 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                      +==========================+
+                                      | skillLevel_t      struct |
+                                      +--------------------------+
+                                      | engineering    numeric_t |
+                                      | learning       numeric_t |
+                                      | surviving      numeric_t |
+                                      | reconnoiter    numeric_t |
+                                      | ------------------------ |
+                                      | rifle          numeric_t |
+                                      | handgun        numeric_t |
+                                      | bow            numeric_t |
+                                      | machinegun     numeric_t |           +=============================================+
+                                      | ------------------------ |           | AbstartcCharacter Class                     |
+                                      | sharp          numeric_t |           +---------------------------------------------+
+                                      | stabbing       numeric_t |           |                                             |
+                                      | blunt          numeric_t |           +---------------------------------------------+
+                                      +--------------------------+           | m_health                          numeric_t |
+                                                                             | m_hungar                          numeric_t |
+                                                                             | m_satiety                      percentage_t |
++==========================+          +==========================+           | m_mana                            numeric_t |
+| numeric_t int32_t        |          | characterStatus_t struct |           | m_san                             numeric_t |
++--------------------------+          +--------------------------+           | m_experience                      numeric_t |
+                                      | maxHealth      numeric_t |           | m_baseInformation             information_t |
++==========================+          | maxMana        numeric_t |           | ------------------------------------------- |
+| percentage_t float       |          | maxSan         numeric_t |           | m_pramiryStatus           characterStatus_t |
++--------------------------+          +--------------------------+           | m_equipmentImprovedStatus characterStatus_t |
+                                      | levels         numeric_t |           | m_effectAffectedStatus    characterStatus_t |
+                                      +--------------------------+           | m_equalitiveStatus        characterStatus_t |
+                                                                             | ------------------------------------------- |
+                                                                             | m_attributes                   attributes_t |
+                                      +==========================+           | m_skillLevels                  skillLevel_t |
+                                      | attributes_t      struct |           | ------------------------------------------- |
+                                      +--------------------------+           | m_bodyParts                          body_t |
+                                      | strengte       numeric_t |           | ------------------------------------------- |
+                                      | agility        numeric_t |           | m_totalDressed            AbstractContainer |
+                                      | shape          numeric_t |           | m_currentSash             AbstractContainer |
+                                      | talent         numeric_t |           | m_currentEquipments            equipments_t |
+                                      | sense          numeric_t |           | m_shotcut              vector<AbstractItem> |
+                                      | charms         numeric_t |           |                                             |
+                                      +--------------------------+           +---------------------------------------------+
