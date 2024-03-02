@@ -4,21 +4,36 @@
     <ClCompile Include="E:\Local\tmp\prj\cocos2d4-prj\Faded\Classes\AppDelegate.cpp">
       <Filter>Source Files\Classes</Filter>
     </ClCompile>
-    <ClCompile Include="E:\Local\tmp\prj\cocos2d4-prj\Faded\Classes\HelloWorldScene.cpp">
-      <Filter>Source Files\Classes</Filter>
-    </ClCompile>
     <ClCompile Include="E:\Local\tmp\prj\cocos2d4-prj\Faded\proj.win32\main.cpp">
       <Filter>Source Files\proj.win32</Filter>
     </ClCompile>
     <ClCompile Include="E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\cocos\precheader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\Classes\Configuration\Video\Screen\ConfigurationScreen.cpp">
+      <Filter>Source Files\Classes\Configuration\Video\Screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Configuration\GameBasic\GameBasicInformation.cc">
+      <Filter>Source Files\Classes\Configuration\GameBasic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scene\StartScene\PrimaryScene.cc">
+      <Filter>Source Files\Classes\Scene\StartScene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scene\StartScene\StartGameMenuLayer.cc">
+      <Filter>Source Files\Classes\Scene\StartScene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Utils\Random\SimpleRandomUtils.cpp">
+      <Filter>Source Files\Classes\Utils\Random</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scene\StartScene\GameInformationLayer.cc">
+      <Filter>Source Files\Classes\Scene\StartScene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Item\ItemTypeMap.cc">
+      <Filter>Source Files\Classes\Item</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="E:\Local\tmp\prj\cocos2d4-prj\Faded\Classes\AppDelegate.h">
-      <Filter>Source Files\Classes</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\Local\tmp\prj\cocos2d4-prj\Faded\Classes\HelloWorldScene.h">
       <Filter>Source Files\Classes</Filter>
     </ClInclude>
     <ClInclude Include="E:\Local\tmp\prj\cocos2d4-prj\Faded\proj.win32\main.h">
@@ -44,6 +59,42 @@
     </ClInclude>
     <ClInclude Include="E:\Local\tmp\prj\cocos2d4-prj\Faded\Resources\res\.gitkeep">
       <Filter>Resources\res</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Configuration\Video\Screen\ConfigurationScreen.h">
+      <Filter>Source Files\Classes\Configuration\Video\Screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Configuration\GameBasic\GameBasicInformation.h">
+      <Filter>Source Files\Classes\Configuration\GameBasic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Public\PublicHeader.h">
+      <Filter>Source Files\Classes\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scene\StartScene\PrimaryScene.h">
+      <Filter>Source Files\Classes\Scene\StartScene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scene\StartScene\StartGameMenuLayer.h">
+      <Filter>Source Files\Classes\Scene\StartScene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Utils\Random\SimpleRandomUtils.h">
+      <Filter>Source Files\Classes\Utils\Random</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Utils\Macros\Singleton\SingletonMacros.h">
+      <Filter>Source Files\Classes\Utils\Macros\Singleton</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scene\StartScene\GameInformationLayer.h">
+      <Filter>Source Files\Classes\Scene\StartScene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Utils\Macros\Configuration\VideoConfiguration.h">
+      <Filter>Source Files\Classes\Utils\Macros\Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Item\AbstractItems.h">
+      <Filter>Source Files\Classes\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Item\ItemHeader.h">
+      <Filter>Source Files\Classes\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Item\ItemTypeMap.h">
+      <Filter>Source Files\Classes\Item</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -72,6 +123,159 @@
     </Filter>
     <Filter Include="Source Files\proj.win32">
       <UniqueIdentifier>{626978ED-1E3D-3CA2-A5C5-76DF04ACFCF4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes\Item">
+      <UniqueIdentifier>{26a3c2d3-87e3-4996-baee-d6c4bb0d958a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes\Container">
+      <UniqueIdentifier>{ada172a2-c98c-4801-84b8-ed809c89512d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes\Environment">
+      <UniqueIdentifier>{2f1c5500-f04a-4a79-93c5-511cc8aabaab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes\Scene">
+      <UniqueIdentifier>{725d896f-c510-4b4f-bf21-dd4c6de2f3fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes\Layer">
+      <UniqueIdentifier>{c5ad3246-5887-4e70-a43c-398d5f273475}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes\Character">
+      <UniqueIdentifier>{499043a9-5663-45a6-ab29-780601d44b82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes\Character\Player">
+      <UniqueIdentifier>{25ea14d9-0bc7-4662-94e1-d052cd36b6cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes\Character\Enemy">
+      <UniqueIdentifier>{212b3407-b5c2-4692-bd58-8b00c98422b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes\Character\NPC">
+      <UniqueIdentifier>{f2d1fbc8-06d6-4812-b406-84005b96c6af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes\Environment\Blocker">
+      <UniqueIdentifier>{b78e849a-753d-4055-813c-360560fd3b85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes\Environment\Activable">
+      <UniqueIdentifier>{38514a09-6d96-40fb-8bea-77d37e039dfe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes\Equipment">
+      <UniqueIdentifier>{783ea1c5-d9dd-4492-a89d-e3782d8e0c13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes\Equipment\Weapon">
+      <UniqueIdentifier>{48007ad1-07f9-4309-a6c3-28f6db3dea06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes\Equipment\Closthes">
+      <UniqueIdentifier>{8c661447-ae3a-4478-ad1f-f1525cee9456}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes\Equipment\Weapon\Ranged">
+      <UniqueIdentifier>{3938c3c0-a947-4a4c-bca1-8c0541da7b6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes\Equipment\Weapon\Melee">
+      <UniqueIdentifier>{5092373f-b17c-441f-afef-3df5ea8945e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes\Equipment\Closthes\Armor">
+      <UniqueIdentifier>{0a4b3dba-6ccf-4a65-884d-50f224226e27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes\Equipment\Weapon\Melee\Cutting">
+      <UniqueIdentifier>{80e228ca-15ca-4246-8110-a60a030a2db5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes\Equipment\Weapon\Melee\Stabbing">
+      <UniqueIdentifier>{edb56e10-e756-46a1-bb67-0a3819966228}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes\Equipment\Weapon\Melee\Blunt">
+      <UniqueIdentifier>{c097d2e8-b51b-4874-8695-91bd84c40c47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes\Equipment\Weapon\Ranged\Projetile">
+      <UniqueIdentifier>{3c084d83-5469-47e3-9f81-47ec86bac7fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes\Equipment\Weapon\Ranged\Laser">
+      <UniqueIdentifier>{fc52ee47-5733-4eb8-9b1c-d33a94d98b2a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes\Layer\OptionUI">
+      <UniqueIdentifier>{7c2e0390-7e23-4a38-a6ad-73e90f715244}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes\Layer\InformationUI">
+      <UniqueIdentifier>{c16ac2bc-880b-4fe2-a0af-a6fdb12db89e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes\Scene\StartScene">
+      <UniqueIdentifier>{087dc5b2-b118-47cc-a8b2-9d3a78170b06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\UI">
+      <UniqueIdentifier>{c8c79057-e71e-46c3-8ba4-28cc04f33144}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\UI\StartScene">
+      <UniqueIdentifier>{e0c9fcfd-7e65-4a72-90d9-006f7ad60478}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\UI\StartScene\OptionMenu">
+      <UniqueIdentifier>{4d755b8a-99d0-44da-b9bd-ca373feebc5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\UI\StartScene\LicenseMenu">
+      <UniqueIdentifier>{d1fe947a-27f7-485b-8d3c-026ed379ffbe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\UI\StartScene\Background">
+      <UniqueIdentifier>{6dae32e0-e7c6-4ae9-998a-962025edfe7c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\UI\StartScene\StaffMenu">
+      <UniqueIdentifier>{83c69af9-8bb5-46e1-9ddb-c60345158cd4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\UI\StartScene\ChangelogMenu">
+      <UniqueIdentifier>{cffc9e30-1d6a-44bc-87a4-1bcb66e40078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes\Body">
+      <UniqueIdentifier>{efde671e-5f25-42a5-a1aa-127801fd0645}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes\Utils">
+      <UniqueIdentifier>{26834c76-d431-4ffd-a46c-71c9d4e1344d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes\Effect">
+      <UniqueIdentifier>{fc197c08-6ffc-48ec-b268-e959ff3f58dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes\Action">
+      <UniqueIdentifier>{95eaacfa-1416-40ea-8c15-0b13a76a98c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes\Skill">
+      <UniqueIdentifier>{963894cf-3056-4205-b2d4-0193ae8a3cd8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes\Map">
+      <UniqueIdentifier>{53255666-2b8a-471f-9c8a-98e967915739}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes\Map\ShelterMap">
+      <UniqueIdentifier>{1b228d27-4116-4a62-a4a9-5efb902471e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes\Map\BattleFieldMap">
+      <UniqueIdentifier>{0745c03a-10b5-4bbc-b308-080646338652}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes\Scene\GamingScene">
+      <UniqueIdentifier>{5adfd331-ec11-49b8-a683-304dee4b8d39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes\Configuration">
+      <UniqueIdentifier>{9dd8f705-41ae-4783-a07b-418d407409fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes\Configuration\Video">
+      <UniqueIdentifier>{dbe113bb-82a4-4c5f-9348-c6ca6f95be14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes\Configuration\Video\Screen">
+      <UniqueIdentifier>{b112c314-f16a-4e8f-b7cc-8ec41d42d5bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes\Configuration\GameBasic">
+      <UniqueIdentifier>{7bb3d790-dd84-4023-8d50-5faef211a6ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes\Public">
+      <UniqueIdentifier>{9e2c579e-6e4a-4221-8c25-517ffa25b31b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes\Utils\Keyboard">
+      <UniqueIdentifier>{d26c5e79-25ab-4506-9eb6-dd86df622e27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes\Utils\Random">
+      <UniqueIdentifier>{5476c9d7-fd8e-44d3-be23-65d03baf02b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes\Utils\Macros">
+      <UniqueIdentifier>{9f47b85e-9dbd-4bbc-963a-de945441f934}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes\Utils\Macros\Singleton">
+      <UniqueIdentifier>{d5b6aabc-ffea-4693-9d72-31ae97148ad8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes\Utils\Macros\Configuration">
+      <UniqueIdentifier>{636e23f0-1255-4367-9136-83484d364d67}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

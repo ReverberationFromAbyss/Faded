@@ -1,0 +1,117 @@
+# File: README.org -*- encoding=utf-8 -*-
+
+# attributions
+# #+TODO: TODO IN-PROGRESS WAITING DONE
+#+SEQ_TODO: TODO(T@/!) IN-PROGRESS(P@) WAITING(W@) | DONE(D@/!)
+#+SEQ_TODO: BUG(b@/!) TEST-REQUIRED(t@/!) REPORTED(r@/!) | FIXED(f!/!)
+
+# README
+
+* Faded
+
+*** Intro
+This is a game using cocos2d-x engine, which is a by-product of cocos2d-x engine learning.
+本项目为一个简单的游戏, 基于 cocos2d-x 引擎, 是学习 cocos2d-x 引擎时的副产物.
+
+*** Depandencies
++ cocos2d-x version 4
+
+*** Features
+
+******** TODO demo [0/17]
+
+UI part
+- [-] main menu [1/6]
+  + [-] background [3/5]
+    - [X] random background when startup
+    - [X] read background configuration
+    - [X] chang to next after click
+    - [ ] background picture
+    - [ ] animation
+  + [-] start menu [0/2]
+    - [-] background [1/3]
+      + [X] background layout for menu
+      + [ ] background picture
+      + [ ] animation
+    - [-] buttons [1/4]
+      + [X] buttons layout
+      + [ ] link & callbacks
+      + [ ] UI
+      + [ ] animation
+  + [-] version label [2/3]
+    - [X] version label
+    - [X] switch menu callback
+    - [ ] font
+  + [-] info menu
+    - [-] background [1/3]
+      + [X] background for menu
+      + [ ] background picture
+      + [ ] animation
+    - [-] buttons [1/4]
+      + [X] buttons layout
+      + [ ] link & callbacks
+      + [ ] UI
+      + [ ] animation
+  + [X] switch menus
+  + [ ] link to other scene
+- [ ] character creating menu [0/2]
+  + [ ] layout
+  + [ ] character create
+- [ ] main gaming scene [0/3]
+  + [ ] map & UI
+  + [ ] sub gaming scenes [0/5]
+    - [ ] fighting scene
+    - [ ] home scene
+    - [ ] explorering scene
+    - [ ] trading scene
+    - [ ] ... and so on
+  + [ ] link to other scene
+- [ ] option layer [0/0]
+  + ... not clear now
+- [ ] pause layer [0/0]
+  + ... not clear now
+- [ ] news layer [0/0]
+  + ... not clear now
+- [ ] stuff layer [0/0]
+  + ... not clear now
+- [ ] license layer [0/0]
+  + ... not clear now
+Feature part
+- [ ] character [0/5]
+  + [ ] body [0/0]
+  + [ ] attacking
+  + [ ] injored
+  + [ ] armor
+  + [ ] animation
+- [ ] item system [0/4]
+  + [ ] items [0/0]
+  + [ ] item type system [0/0]
+  + [ ] container [0/0]
+  + [ ] item drop down
+- [ ] building system [0/4]
+  + [ ] base [0/0]
+  + [ ] building
+  + [ ] expand
+  + [ ] get attacked and protecting [0/0]
+- [ ] NPC system [0/0]
+  + ... don't know how to
+- [ ] fighting system [0/0]
+- [ ] explorering system [0/0]
+- [ ] archievement system [0/0]
+- [ ] plugin system [0/0]
+Story part
+not clear now
+
+maybe more things to be done...
+
+*** FAQ
+no FAQ now.
+
+*** How to begin
+This is a windows based project.
+
+Under VS 2022, MSVC 17
+
+*** License
++ Apache version 2
++ cocos2d-x: MIT

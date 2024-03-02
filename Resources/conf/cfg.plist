@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>resolution</key>
+        <string>1280x720</string>
+        <key>refreshRate</key>
+        <integer>60</integer>
+        <key>fullScreen</key>
+        <false/>
+        <key>randomBackground</key>
+        <true/>
+        <key>backgroundIndex</key>
+        <integer>1</integer>
+    </dict>
+</plist>

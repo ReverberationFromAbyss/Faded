@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>gameBasicInfoConfPath</key>
+        <string>res/config/gameBaseInfo.plist</string>
+        <key>name</key>
+        <string>Faded.~Memory</string>
+        <key>staffList</key>
+        <dict>
+            <key>Coder</key>
+            <array>
+                <key>新条目 1</key>
+                <string>Sihang.Sha</string>
+            </array>
+        </dict>
+        <key>title</key>
+        <string>Faded</string>
+        <key>version</key>
+        <string>0.0.00.1-dev</string>
+    </dict>
+</plist>

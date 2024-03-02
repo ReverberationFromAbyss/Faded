@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>backgroundImgae</key>
+        <array>
+            <string>startMenu.background1.png</string>
+            <string>startMenu.background2.png</string>
+            <string>startMenu.background3.png</string>
+            <string>startMenu.background4.png</string>
+            <string>startMenu.background5.png</string>
+        </array>
+    </dict>
+</plist>

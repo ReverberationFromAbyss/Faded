@@ -103,6 +103,7 @@
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;COCOS2D_DEBUG=1;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
+      <PrecompiledHeaderFile>stdfx.h</PrecompiledHeaderFile>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;COCOS2D_DEBUG=1;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
@@ -117,7 +118,8 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message>												</Message>
+      <Message>
+      </Message>
       <Command>setlocal
 E:\Local\Applications\Cmake\bin\cmake.exe -E copy_if_different E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll E:/Local/tmp/prj/cocos2d4-prj/Faded/proj.win32/bin/Faded/Debug/libssl-1_1.dll
 if %errorlevel% neq 0 goto :cmEnd
@@ -283,7 +285,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message>												</Message>
+      <Message>
+      </Message>
       <Command>setlocal
 E:\Local\Applications\Cmake\bin\cmake.exe -E copy_if_different E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll E:/Local/tmp/prj/cocos2d4-prj/Faded/proj.win32/bin/Faded/Release/libssl-1_1.dll
 if %errorlevel% neq 0 goto :cmEnd
@@ -449,7 +452,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message>												</Message>
+      <Message>
+      </Message>
       <Command>setlocal
 E:\Local\Applications\Cmake\bin\cmake.exe -E copy_if_different E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll E:/Local/tmp/prj/cocos2d4-prj/Faded/proj.win32/bin/Faded/MinSizeRel/libssl-1_1.dll
 if %errorlevel% neq 0 goto :cmEnd
@@ -614,7 +618,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message>												</Message>
+      <Message>
+      </Message>
       <Command>setlocal
 E:\Local\Applications\Cmake\bin\cmake.exe -E copy_if_different E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll E:/Local/tmp/prj/cocos2d4-prj/Faded/proj.win32/bin/Faded/RelWithDebInfo/libssl-1_1.dll
 if %errorlevel% neq 0 goto :cmEnd
@@ -805,12 +810,29 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\Classes\Configuration\GameBasic\GameBasicInformation.h" />
+    <ClInclude Include="..\Classes\Configuration\Video\Screen\ConfigurationScreen.h" />
+    <ClInclude Include="..\Classes\Item\AbstractItems.h" />
+    <ClInclude Include="..\Classes\Item\ItemHeader.h" />
+    <ClInclude Include="..\Classes\Item\ItemTypeMap.h" />
+    <ClInclude Include="..\Classes\Public\PublicHeader.h" />
+    <ClInclude Include="..\Classes\Scene\StartScene\GameInformationLayer.h" />
+    <ClInclude Include="..\Classes\Scene\StartScene\PrimaryScene.h" />
+    <ClInclude Include="..\Classes\Scene\StartScene\StartGameMenuLayer.h" />
+    <ClInclude Include="..\Classes\Utils\Macros\Configuration\VideoConfiguration.h" />
+    <ClInclude Include="..\Classes\Utils\Macros\Singleton\SingletonMacros.h" />
+    <ClInclude Include="..\Classes\Utils\Random\SimpleRandomUtils.h" />
     <ClInclude Include="E:\Local\tmp\prj\cocos2d4-prj\Faded\Classes\AppDelegate.h" />
-    <ClInclude Include="E:\Local\tmp\prj\cocos2d4-prj\Faded\Classes\HelloWorldScene.h" />
     <ClInclude Include="E:\Local\tmp\prj\cocos2d4-prj\Faded\proj.win32\main.h" />
     <ClInclude Include="E:\Local\tmp\prj\cocos2d4-prj\Faded\proj.win32\resource.h" />
+    <ClCompile Include="..\Classes\Configuration\GameBasic\GameBasicInformation.cc" />
+    <ClCompile Include="..\Classes\Configuration\Video\Screen\ConfigurationScreen.cpp" />
+    <ClCompile Include="..\Classes\Item\ItemTypeMap.cc" />
+    <ClCompile Include="..\Classes\Scene\StartScene\GameInformationLayer.cc" />
+    <ClCompile Include="..\Classes\Scene\StartScene\PrimaryScene.cc" />
+    <ClCompile Include="..\Classes\Scene\StartScene\StartGameMenuLayer.cc" />
+    <ClCompile Include="..\Classes\Utils\Random\SimpleRandomUtils.cpp" />
     <ClCompile Include="E:\Local\tmp\prj\cocos2d4-prj\Faded\Classes\AppDelegate.cpp" />
-    <ClCompile Include="E:\Local\tmp\prj\cocos2d4-prj\Faded\Classes\HelloWorldScene.cpp" />
     <ClCompile Include="E:\Local\tmp\prj\cocos2d4-prj\Faded\proj.win32\main.cpp" />
     <ResourceCompile Include="E:\Local\tmp\prj\cocos2d4-prj\Faded\proj.win32\game.rc" />
     <ClInclude Include="E:\Local\tmp\prj\cocos2d4-prj\Faded\Resources\CloseNormal.png" />
