@@ -1,0 +1,889 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|win32">
+      <Configuration>Debug</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|win32">
+      <Configuration>Release</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9679A336-0725-304E-AB3B-16F8F859BE56}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>win32</Platform>
+    <ProjectName>Faded</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">E:\Local\tmp\prj\cocos2d4-prj\Faded\proj.win32\bin\Faded\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">Faded.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">Faded</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|win32'">E:\Local\tmp\prj\cocos2d4-prj\Faded\proj.win32\bin\Faded\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|win32'">Faded.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|win32'">Faded</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">E:\Local\tmp\prj\cocos2d4-prj\Faded\proj.win32\bin\Faded\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">Faded.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">Faded</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">E:\Local\tmp\prj\cocos2d4-prj\Faded\proj.win32\bin\Faded\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">Faded.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">Faded</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\Local\tmp\prj\cocos2d4-prj\Faded\Classes;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\cocos\audio\include;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\cocos;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\extensions;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\cocos\platform;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\cocos\editor-support;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\cocos\base;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\cocos\platform\win32;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\recast\..;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\tinyxml2\.;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\xxhash\.;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\xxtea\.;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\clipper\.;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\edtaa3func\.;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\ConvertUTF\.;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\poly2tri\..;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\md5\..;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\unzip\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/Box2D/include" /external:I "E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/chipmunk/include" /external:I "E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/freetype2/include/win32/freetype2" /external:I "E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/bullet/include" /external:I "E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/bullet/include/bullet" /external:I "E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/jpeg/include/win32" /external:I "E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/openssl/include/win32" /external:I "E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/uv/include" /external:I "E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/webp/include/win32" /external:I "E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/websockets/include/win32" /external:I "E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/curl/include/win32" /external:I "E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/png/include/win32" /external:I "E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/win32-specific/gles/include/OGLES" /external:I "E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/win32-specific/icon/include" /external:I "E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/win32-specific/MP3Decoder/include" /external:I "E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/win32-specific/OggDecoder/include" /external:I "E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/win32-specific/OpenalSoft/include" /external:I "E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/glfw3/include/win32" /external:I "E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/zlib/../win32-specific/zlib/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;COCOS2D_DEBUG=1;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;COCOS2D_DEBUG=1;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\Local\tmp\prj\cocos2d4-prj\Faded\Classes;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\cocos\audio\include;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\cocos;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\extensions;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\cocos\platform;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\cocos\editor-support;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\cocos\base;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\cocos\platform\win32;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\recast\..;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\tinyxml2\.;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\xxhash\.;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\xxtea\.;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\clipper\.;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\edtaa3func\.;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\ConvertUTF\.;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\poly2tri\..;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\md5\..;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\unzip\.;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\Box2D\include;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\chipmunk\include;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\freetype2\include\win32\freetype2;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\bullet\include;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\bullet\include\bullet;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\jpeg\include\win32;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\openssl\include\win32;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\uv\include;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\webp\include\win32;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\websockets\include\win32;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\curl\include\win32;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\png\include\win32;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\win32-specific\gles\include\OGLES;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\win32-specific\icon\include;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\win32-specific\MP3Decoder\include;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\win32-specific\OggDecoder\include;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\win32-specific\OpenalSoft\include;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\glfw3\include\win32;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\Local\tmp\prj\cocos2d4-prj\Faded\Classes;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\cocos\audio\include;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\cocos;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\extensions;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\cocos\platform;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\cocos\editor-support;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\cocos\base;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\cocos\platform\win32;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\recast\..;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\tinyxml2\.;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\xxhash\.;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\xxtea\.;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\clipper\.;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\edtaa3func\.;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\ConvertUTF\.;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\poly2tri\..;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\md5\..;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\unzip\.;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\Box2D\include;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\chipmunk\include;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\freetype2\include\win32\freetype2;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\bullet\include;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\bullet\include\bullet;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\jpeg\include\win32;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\openssl\include\win32;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\uv\include;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\webp\include\win32;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\websockets\include\win32;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\curl\include\win32;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\png\include\win32;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\win32-specific\gles\include\OGLES;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\win32-specific\icon\include;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\win32-specific\MP3Decoder\include;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\win32-specific\OggDecoder\include;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\win32-specific\OpenalSoft\include;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\glfw3\include\win32;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>												</Message>
+      <Command>setlocal
+E:\Local\Applications\Cmake\bin\cmake.exe -E copy_if_different E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll E:/Local/tmp/prj/cocos2d4-prj/Faded/proj.win32/bin/Faded/Debug/libssl-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\Local\Applications\Cmake\bin\cmake.exe -E copy_if_different E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/openssl/prebuilt/win32/libcrypto-1_1.dll E:/Local/tmp/prj/cocos2d4-prj/Faded/proj.win32/bin/Faded/Debug/libcrypto-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\Local\Applications\Cmake\bin\cmake.exe -E copy_if_different E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/uv/prebuilt/win32/uv.dll E:/Local/tmp/prj/cocos2d4-prj/Faded/proj.win32/bin/Faded/Debug/uv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\Local\Applications\Cmake\bin\cmake.exe -E copy_if_different E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/websockets/prebuilt/win32/websockets.dll E:/Local/tmp/prj/cocos2d4-prj/Faded/proj.win32/bin/Faded/Debug/websockets.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\Local\Applications\Cmake\bin\cmake.exe -E copy_if_different E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/curl/prebuilt/win32/libcurl.dll E:/Local/tmp/prj/cocos2d4-prj/Faded/proj.win32/bin/Faded/Debug/libcurl.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\Local\Applications\Cmake\bin\cmake.exe -E copy_if_different E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/win32-specific/gles/prebuilt/glew32.dll E:/Local/tmp/prj/cocos2d4-prj/Faded/proj.win32/bin/Faded/Debug/glew32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\Local\Applications\Cmake\bin\cmake.exe -E copy_if_different E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/win32-specific/icon/prebuilt/iconv.dll E:/Local/tmp/prj/cocos2d4-prj/Faded/proj.win32/bin/Faded/Debug/iconv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\Local\Applications\Cmake\bin\cmake.exe -E copy_if_different E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/win32-specific/MP3Decoder/prebuilt/libmpg123.dll E:/Local/tmp/prj/cocos2d4-prj/Faded/proj.win32/bin/Faded/Debug/libmpg123.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\Local\Applications\Cmake\bin\cmake.exe -E copy_if_different E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/win32-specific/OggDecoder/prebuilt/libogg.dll E:/Local/tmp/prj/cocos2d4-prj/Faded/proj.win32/bin/Faded/Debug/libogg.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\Local\Applications\Cmake\bin\cmake.exe -E copy_if_different E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbis.dll E:/Local/tmp/prj/cocos2d4-prj/Faded/proj.win32/bin/Faded/Debug/libvorbis.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\Local\Applications\Cmake\bin\cmake.exe -E copy_if_different E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbisfile.dll E:/Local/tmp/prj/cocos2d4-prj/Faded/proj.win32/bin/Faded/Debug/libvorbisfile.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\Local\Applications\Cmake\bin\cmake.exe -E copy_if_different E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/win32-specific/OpenalSoft/prebuilt/OpenAL32.dll E:/Local/tmp/prj/cocos2d4-prj/Faded/proj.win32/bin/Faded/Debug/OpenAL32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\Local\Applications\Cmake\bin\cmake.exe -E copy_if_different E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/zlib/../win32-specific/zlib/prebuilt/zlib1.dll E:/Local/tmp/prj/cocos2d4-prj/Faded/proj.win32/bin/Faded/Debug/zlib1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>lib\Debug\cocos2d.lib;lib\Debug\external.lib;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\Box2D\prebuilt\win32\debug\libbox2d.lib;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\chipmunk\prebuilt\win32\debug-lib\libchipmunk.lib;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\freetype2\prebuilt\win32\freetype.lib;lib\Debug\ext_recast.lib;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\bullet\prebuilt\win32\debug\libbullet.lib;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\jpeg\prebuilt\win32\libjpeg.lib;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\webp\prebuilt\win32\libwebp.lib;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\websockets\prebuilt\win32\websockets.lib;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\openssl\prebuilt\win32\libssl.lib;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\openssl\prebuilt\win32\libcrypto.lib;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\uv\prebuilt\win32\uv_a.lib;lib\Debug\ext_tinyxml2.lib;lib\Debug\ext_xxhash.lib;lib\Debug\ext_xxtea.lib;lib\Debug\ext_clipper.lib;lib\Debug\ext_edtaa3func.lib;lib\Debug\ext_convertUTF.lib;lib\Debug\ext_poly2tri.lib;lib\Debug\ext_md5.lib;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\curl\prebuilt\win32\libcurl.lib;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\png\prebuilt\win32\libpng.lib;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\win32-specific\gles\prebuilt\glew32.lib;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\win32-specific\icon\prebuilt\libiconv.lib;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\win32-specific\MP3Decoder\prebuilt\libmpg123.lib;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\win32-specific\OggDecoder\prebuilt\libogg.lib;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbis.lib;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbisfile.lib;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\win32-specific\OpenalSoft\prebuilt\OpenAL32.lib;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\glfw3\prebuilt\win32\glfw3.lib;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\zlib\..\win32-specific\zlib\prebuilt\libzlib.lib;lib\Debug\ext_unzip.lib;ws2_32.lib;userenv.lib;psapi.lib;winmm.lib;Version.lib;Iphlpapi.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/Local/tmp/prj/cocos2d4-prj/Faded/proj.win32/Debug/Faded.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/Local/tmp/prj/cocos2d4-prj/Faded/proj.win32/bin/Faded/Debug/Faded.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\Local\tmp\prj\cocos2d4-prj\Faded\Classes;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\cocos\audio\include;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\cocos;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\extensions;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\cocos\platform;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\cocos\editor-support;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\cocos\base;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\cocos\platform\win32;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\recast\..;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\tinyxml2\.;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\xxhash\.;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\xxtea\.;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\clipper\.;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\edtaa3func\.;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\ConvertUTF\.;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\poly2tri\..;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\md5\..;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\unzip\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/Box2D/include" /external:I "E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/chipmunk/include" /external:I "E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/freetype2/include/win32/freetype2" /external:I "E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/bullet/include" /external:I "E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/bullet/include/bullet" /external:I "E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/jpeg/include/win32" /external:I "E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/openssl/include/win32" /external:I "E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/uv/include" /external:I "E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/webp/include/win32" /external:I "E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/websockets/include/win32" /external:I "E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/curl/include/win32" /external:I "E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/png/include/win32" /external:I "E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/win32-specific/gles/include/OGLES" /external:I "E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/win32-specific/icon/include" /external:I "E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/win32-specific/MP3Decoder/include" /external:I "E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/win32-specific/OggDecoder/include" /external:I "E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/win32-specific/OpenalSoft/include" /external:I "E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/glfw3/include/win32" /external:I "E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/zlib/../win32-specific/zlib/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\Local\tmp\prj\cocos2d4-prj\Faded\Classes;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\cocos\audio\include;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\cocos;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\extensions;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\cocos\platform;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\cocos\editor-support;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\cocos\base;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\cocos\platform\win32;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\recast\..;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\tinyxml2\.;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\xxhash\.;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\xxtea\.;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\clipper\.;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\edtaa3func\.;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\ConvertUTF\.;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\poly2tri\..;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\md5\..;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\unzip\.;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\Box2D\include;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\chipmunk\include;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\freetype2\include\win32\freetype2;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\bullet\include;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\bullet\include\bullet;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\jpeg\include\win32;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\openssl\include\win32;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\uv\include;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\webp\include\win32;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\websockets\include\win32;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\curl\include\win32;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\png\include\win32;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\win32-specific\gles\include\OGLES;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\win32-specific\icon\include;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\win32-specific\MP3Decoder\include;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\win32-specific\OggDecoder\include;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\win32-specific\OpenalSoft\include;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\glfw3\include\win32;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\Local\tmp\prj\cocos2d4-prj\Faded\Classes;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\cocos\audio\include;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\cocos;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\extensions;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\cocos\platform;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\cocos\editor-support;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\cocos\base;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\cocos\platform\win32;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\recast\..;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\tinyxml2\.;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\xxhash\.;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\xxtea\.;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\clipper\.;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\edtaa3func\.;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\ConvertUTF\.;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\poly2tri\..;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\md5\..;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\unzip\.;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\Box2D\include;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\chipmunk\include;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\freetype2\include\win32\freetype2;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\bullet\include;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\bullet\include\bullet;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\jpeg\include\win32;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\openssl\include\win32;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\uv\include;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\webp\include\win32;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\websockets\include\win32;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\curl\include\win32;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\png\include\win32;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\win32-specific\gles\include\OGLES;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\win32-specific\icon\include;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\win32-specific\MP3Decoder\include;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\win32-specific\OggDecoder\include;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\win32-specific\OpenalSoft\include;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\glfw3\include\win32;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>												</Message>
+      <Command>setlocal
+E:\Local\Applications\Cmake\bin\cmake.exe -E copy_if_different E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll E:/Local/tmp/prj/cocos2d4-prj/Faded/proj.win32/bin/Faded/Release/libssl-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\Local\Applications\Cmake\bin\cmake.exe -E copy_if_different E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/openssl/prebuilt/win32/libcrypto-1_1.dll E:/Local/tmp/prj/cocos2d4-prj/Faded/proj.win32/bin/Faded/Release/libcrypto-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\Local\Applications\Cmake\bin\cmake.exe -E copy_if_different E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/uv/prebuilt/win32/uv.dll E:/Local/tmp/prj/cocos2d4-prj/Faded/proj.win32/bin/Faded/Release/uv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\Local\Applications\Cmake\bin\cmake.exe -E copy_if_different E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/websockets/prebuilt/win32/websockets.dll E:/Local/tmp/prj/cocos2d4-prj/Faded/proj.win32/bin/Faded/Release/websockets.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\Local\Applications\Cmake\bin\cmake.exe -E copy_if_different E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/curl/prebuilt/win32/libcurl.dll E:/Local/tmp/prj/cocos2d4-prj/Faded/proj.win32/bin/Faded/Release/libcurl.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\Local\Applications\Cmake\bin\cmake.exe -E copy_if_different E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/win32-specific/gles/prebuilt/glew32.dll E:/Local/tmp/prj/cocos2d4-prj/Faded/proj.win32/bin/Faded/Release/glew32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\Local\Applications\Cmake\bin\cmake.exe -E copy_if_different E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/win32-specific/icon/prebuilt/iconv.dll E:/Local/tmp/prj/cocos2d4-prj/Faded/proj.win32/bin/Faded/Release/iconv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\Local\Applications\Cmake\bin\cmake.exe -E copy_if_different E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/win32-specific/MP3Decoder/prebuilt/libmpg123.dll E:/Local/tmp/prj/cocos2d4-prj/Faded/proj.win32/bin/Faded/Release/libmpg123.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\Local\Applications\Cmake\bin\cmake.exe -E copy_if_different E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/win32-specific/OggDecoder/prebuilt/libogg.dll E:/Local/tmp/prj/cocos2d4-prj/Faded/proj.win32/bin/Faded/Release/libogg.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\Local\Applications\Cmake\bin\cmake.exe -E copy_if_different E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbis.dll E:/Local/tmp/prj/cocos2d4-prj/Faded/proj.win32/bin/Faded/Release/libvorbis.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\Local\Applications\Cmake\bin\cmake.exe -E copy_if_different E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbisfile.dll E:/Local/tmp/prj/cocos2d4-prj/Faded/proj.win32/bin/Faded/Release/libvorbisfile.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\Local\Applications\Cmake\bin\cmake.exe -E copy_if_different E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/win32-specific/OpenalSoft/prebuilt/OpenAL32.dll E:/Local/tmp/prj/cocos2d4-prj/Faded/proj.win32/bin/Faded/Release/OpenAL32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\Local\Applications\Cmake\bin\cmake.exe -E copy_if_different E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/zlib/../win32-specific/zlib/prebuilt/zlib1.dll E:/Local/tmp/prj/cocos2d4-prj/Faded/proj.win32/bin/Faded/Release/zlib1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>lib\Release\cocos2d.lib;lib\Release\external.lib;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\Box2D\prebuilt\win32\release\libbox2d.lib;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\chipmunk\prebuilt\win32\release-lib\libchipmunk.lib;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\freetype2\prebuilt\win32\freetype.lib;lib\Release\ext_recast.lib;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\bullet\prebuilt\win32\release\libbullet.lib;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\jpeg\prebuilt\win32\libjpeg.lib;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\webp\prebuilt\win32\libwebp.lib;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\websockets\prebuilt\win32\websockets.lib;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\openssl\prebuilt\win32\libssl.lib;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\openssl\prebuilt\win32\libcrypto.lib;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\uv\prebuilt\win32\uv_a.lib;lib\Release\ext_tinyxml2.lib;lib\Release\ext_xxhash.lib;lib\Release\ext_xxtea.lib;lib\Release\ext_clipper.lib;lib\Release\ext_edtaa3func.lib;lib\Release\ext_convertUTF.lib;lib\Release\ext_poly2tri.lib;lib\Release\ext_md5.lib;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\curl\prebuilt\win32\libcurl.lib;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\png\prebuilt\win32\libpng.lib;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\win32-specific\gles\prebuilt\glew32.lib;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\win32-specific\icon\prebuilt\libiconv.lib;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\win32-specific\MP3Decoder\prebuilt\libmpg123.lib;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\win32-specific\OggDecoder\prebuilt\libogg.lib;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbis.lib;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbisfile.lib;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\win32-specific\OpenalSoft\prebuilt\OpenAL32.lib;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\glfw3\prebuilt\win32\glfw3.lib;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\zlib\..\win32-specific\zlib\prebuilt\libzlib.lib;lib\Release\ext_unzip.lib;ws2_32.lib;userenv.lib;psapi.lib;winmm.lib;Version.lib;Iphlpapi.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/Local/tmp/prj/cocos2d4-prj/Faded/proj.win32/Release/Faded.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/Local/tmp/prj/cocos2d4-prj/Faded/proj.win32/bin/Faded/Release/Faded.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\Local\tmp\prj\cocos2d4-prj\Faded\Classes;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\cocos\audio\include;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\cocos;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\extensions;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\cocos\platform;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\cocos\editor-support;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\cocos\base;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\cocos\platform\win32;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\recast\..;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\tinyxml2\.;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\xxhash\.;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\xxtea\.;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\clipper\.;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\edtaa3func\.;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\ConvertUTF\.;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\poly2tri\..;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\md5\..;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\unzip\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/Box2D/include" /external:I "E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/chipmunk/include" /external:I "E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/freetype2/include/win32/freetype2" /external:I "E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/bullet/include" /external:I "E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/bullet/include/bullet" /external:I "E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/jpeg/include/win32" /external:I "E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/openssl/include/win32" /external:I "E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/uv/include" /external:I "E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/webp/include/win32" /external:I "E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/websockets/include/win32" /external:I "E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/curl/include/win32" /external:I "E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/png/include/win32" /external:I "E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/win32-specific/gles/include/OGLES" /external:I "E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/win32-specific/icon/include" /external:I "E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/win32-specific/MP3Decoder/include" /external:I "E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/win32-specific/OggDecoder/include" /external:I "E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/win32-specific/OpenalSoft/include" /external:I "E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/glfw3/include/win32" /external:I "E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/zlib/../win32-specific/zlib/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\Local\tmp\prj\cocos2d4-prj\Faded\Classes;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\cocos\audio\include;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\cocos;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\extensions;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\cocos\platform;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\cocos\editor-support;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\cocos\base;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\cocos\platform\win32;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\recast\..;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\tinyxml2\.;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\xxhash\.;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\xxtea\.;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\clipper\.;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\edtaa3func\.;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\ConvertUTF\.;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\poly2tri\..;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\md5\..;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\unzip\.;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\Box2D\include;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\chipmunk\include;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\freetype2\include\win32\freetype2;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\bullet\include;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\bullet\include\bullet;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\jpeg\include\win32;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\openssl\include\win32;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\uv\include;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\webp\include\win32;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\websockets\include\win32;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\curl\include\win32;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\png\include\win32;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\win32-specific\gles\include\OGLES;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\win32-specific\icon\include;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\win32-specific\MP3Decoder\include;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\win32-specific\OggDecoder\include;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\win32-specific\OpenalSoft\include;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\glfw3\include\win32;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\Local\tmp\prj\cocos2d4-prj\Faded\Classes;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\cocos\audio\include;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\cocos;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\extensions;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\cocos\platform;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\cocos\editor-support;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\cocos\base;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\cocos\platform\win32;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\recast\..;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\tinyxml2\.;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\xxhash\.;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\xxtea\.;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\clipper\.;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\edtaa3func\.;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\ConvertUTF\.;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\poly2tri\..;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\md5\..;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\unzip\.;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\Box2D\include;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\chipmunk\include;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\freetype2\include\win32\freetype2;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\bullet\include;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\bullet\include\bullet;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\jpeg\include\win32;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\openssl\include\win32;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\uv\include;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\webp\include\win32;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\websockets\include\win32;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\curl\include\win32;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\png\include\win32;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\win32-specific\gles\include\OGLES;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\win32-specific\icon\include;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\win32-specific\MP3Decoder\include;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\win32-specific\OggDecoder\include;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\win32-specific\OpenalSoft\include;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\glfw3\include\win32;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>												</Message>
+      <Command>setlocal
+E:\Local\Applications\Cmake\bin\cmake.exe -E copy_if_different E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll E:/Local/tmp/prj/cocos2d4-prj/Faded/proj.win32/bin/Faded/MinSizeRel/libssl-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\Local\Applications\Cmake\bin\cmake.exe -E copy_if_different E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/openssl/prebuilt/win32/libcrypto-1_1.dll E:/Local/tmp/prj/cocos2d4-prj/Faded/proj.win32/bin/Faded/MinSizeRel/libcrypto-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\Local\Applications\Cmake\bin\cmake.exe -E copy_if_different E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/uv/prebuilt/win32/uv.dll E:/Local/tmp/prj/cocos2d4-prj/Faded/proj.win32/bin/Faded/MinSizeRel/uv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\Local\Applications\Cmake\bin\cmake.exe -E copy_if_different E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/websockets/prebuilt/win32/websockets.dll E:/Local/tmp/prj/cocos2d4-prj/Faded/proj.win32/bin/Faded/MinSizeRel/websockets.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\Local\Applications\Cmake\bin\cmake.exe -E copy_if_different E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/curl/prebuilt/win32/libcurl.dll E:/Local/tmp/prj/cocos2d4-prj/Faded/proj.win32/bin/Faded/MinSizeRel/libcurl.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\Local\Applications\Cmake\bin\cmake.exe -E copy_if_different E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/win32-specific/gles/prebuilt/glew32.dll E:/Local/tmp/prj/cocos2d4-prj/Faded/proj.win32/bin/Faded/MinSizeRel/glew32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\Local\Applications\Cmake\bin\cmake.exe -E copy_if_different E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/win32-specific/icon/prebuilt/iconv.dll E:/Local/tmp/prj/cocos2d4-prj/Faded/proj.win32/bin/Faded/MinSizeRel/iconv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\Local\Applications\Cmake\bin\cmake.exe -E copy_if_different E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/win32-specific/MP3Decoder/prebuilt/libmpg123.dll E:/Local/tmp/prj/cocos2d4-prj/Faded/proj.win32/bin/Faded/MinSizeRel/libmpg123.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\Local\Applications\Cmake\bin\cmake.exe -E copy_if_different E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/win32-specific/OggDecoder/prebuilt/libogg.dll E:/Local/tmp/prj/cocos2d4-prj/Faded/proj.win32/bin/Faded/MinSizeRel/libogg.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\Local\Applications\Cmake\bin\cmake.exe -E copy_if_different E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbis.dll E:/Local/tmp/prj/cocos2d4-prj/Faded/proj.win32/bin/Faded/MinSizeRel/libvorbis.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\Local\Applications\Cmake\bin\cmake.exe -E copy_if_different E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbisfile.dll E:/Local/tmp/prj/cocos2d4-prj/Faded/proj.win32/bin/Faded/MinSizeRel/libvorbisfile.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\Local\Applications\Cmake\bin\cmake.exe -E copy_if_different E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/win32-specific/OpenalSoft/prebuilt/OpenAL32.dll E:/Local/tmp/prj/cocos2d4-prj/Faded/proj.win32/bin/Faded/MinSizeRel/OpenAL32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\Local\Applications\Cmake\bin\cmake.exe -E copy_if_different E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/zlib/../win32-specific/zlib/prebuilt/zlib1.dll E:/Local/tmp/prj/cocos2d4-prj/Faded/proj.win32/bin/Faded/MinSizeRel/zlib1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>lib\MinSizeRel\cocos2d.lib;lib\MinSizeRel\external.lib;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\Box2D\prebuilt\win32\release\libbox2d.lib;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\chipmunk\prebuilt\win32\release-lib\libchipmunk.lib;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\freetype2\prebuilt\win32\freetype.lib;lib\MinSizeRel\ext_recast.lib;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\bullet\prebuilt\win32\release\libbullet.lib;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\jpeg\prebuilt\win32\libjpeg.lib;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\webp\prebuilt\win32\libwebp.lib;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\websockets\prebuilt\win32\websockets.lib;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\openssl\prebuilt\win32\libssl.lib;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\openssl\prebuilt\win32\libcrypto.lib;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\uv\prebuilt\win32\uv_a.lib;lib\MinSizeRel\ext_tinyxml2.lib;lib\MinSizeRel\ext_xxhash.lib;lib\MinSizeRel\ext_xxtea.lib;lib\MinSizeRel\ext_clipper.lib;lib\MinSizeRel\ext_edtaa3func.lib;lib\MinSizeRel\ext_convertUTF.lib;lib\MinSizeRel\ext_poly2tri.lib;lib\MinSizeRel\ext_md5.lib;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\curl\prebuilt\win32\libcurl.lib;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\png\prebuilt\win32\libpng.lib;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\win32-specific\gles\prebuilt\glew32.lib;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\win32-specific\icon\prebuilt\libiconv.lib;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\win32-specific\MP3Decoder\prebuilt\libmpg123.lib;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\win32-specific\OggDecoder\prebuilt\libogg.lib;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbis.lib;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbisfile.lib;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\win32-specific\OpenalSoft\prebuilt\OpenAL32.lib;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\glfw3\prebuilt\win32\glfw3.lib;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\zlib\..\win32-specific\zlib\prebuilt\libzlib.lib;lib\MinSizeRel\ext_unzip.lib;ws2_32.lib;userenv.lib;psapi.lib;winmm.lib;Version.lib;Iphlpapi.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/Local/tmp/prj/cocos2d4-prj/Faded/proj.win32/MinSizeRel/Faded.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/Local/tmp/prj/cocos2d4-prj/Faded/proj.win32/bin/Faded/MinSizeRel/Faded.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\Local\tmp\prj\cocos2d4-prj\Faded\Classes;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\cocos\audio\include;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\cocos;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\extensions;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\cocos\platform;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\cocos\editor-support;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\cocos\base;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\cocos\platform\win32;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\recast\..;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\tinyxml2\.;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\xxhash\.;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\xxtea\.;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\clipper\.;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\edtaa3func\.;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\ConvertUTF\.;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\poly2tri\..;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\md5\..;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\unzip\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/Box2D/include" /external:I "E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/chipmunk/include" /external:I "E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/freetype2/include/win32/freetype2" /external:I "E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/bullet/include" /external:I "E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/bullet/include/bullet" /external:I "E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/jpeg/include/win32" /external:I "E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/openssl/include/win32" /external:I "E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/uv/include" /external:I "E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/webp/include/win32" /external:I "E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/websockets/include/win32" /external:I "E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/curl/include/win32" /external:I "E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/png/include/win32" /external:I "E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/win32-specific/gles/include/OGLES" /external:I "E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/win32-specific/icon/include" /external:I "E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/win32-specific/MP3Decoder/include" /external:I "E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/win32-specific/OggDecoder/include" /external:I "E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/win32-specific/OpenalSoft/include" /external:I "E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/glfw3/include/win32" /external:I "E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/zlib/../win32-specific/zlib/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\Local\tmp\prj\cocos2d4-prj\Faded\Classes;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\cocos\audio\include;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\cocos;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\extensions;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\cocos\platform;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\cocos\editor-support;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\cocos\base;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\cocos\platform\win32;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\recast\..;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\tinyxml2\.;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\xxhash\.;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\xxtea\.;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\clipper\.;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\edtaa3func\.;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\ConvertUTF\.;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\poly2tri\..;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\md5\..;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\unzip\.;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\Box2D\include;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\chipmunk\include;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\freetype2\include\win32\freetype2;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\bullet\include;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\bullet\include\bullet;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\jpeg\include\win32;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\openssl\include\win32;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\uv\include;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\webp\include\win32;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\websockets\include\win32;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\curl\include\win32;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\png\include\win32;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\win32-specific\gles\include\OGLES;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\win32-specific\icon\include;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\win32-specific\MP3Decoder\include;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\win32-specific\OggDecoder\include;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\win32-specific\OpenalSoft\include;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\glfw3\include\win32;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\Local\tmp\prj\cocos2d4-prj\Faded\Classes;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\cocos\audio\include;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\cocos;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\extensions;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\cocos\platform;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\cocos\editor-support;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\cocos\base;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\cocos\platform\win32;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\recast\..;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\tinyxml2\.;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\xxhash\.;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\xxtea\.;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\clipper\.;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\edtaa3func\.;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\ConvertUTF\.;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\poly2tri\..;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\md5\..;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\unzip\.;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\Box2D\include;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\chipmunk\include;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\freetype2\include\win32\freetype2;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\bullet\include;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\bullet\include\bullet;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\jpeg\include\win32;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\openssl\include\win32;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\uv\include;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\webp\include\win32;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\websockets\include\win32;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\curl\include\win32;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\png\include\win32;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\win32-specific\gles\include\OGLES;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\win32-specific\icon\include;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\win32-specific\MP3Decoder\include;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\win32-specific\OggDecoder\include;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\win32-specific\OpenalSoft\include;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\glfw3\include\win32;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>												</Message>
+      <Command>setlocal
+E:\Local\Applications\Cmake\bin\cmake.exe -E copy_if_different E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll E:/Local/tmp/prj/cocos2d4-prj/Faded/proj.win32/bin/Faded/RelWithDebInfo/libssl-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\Local\Applications\Cmake\bin\cmake.exe -E copy_if_different E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/openssl/prebuilt/win32/libcrypto-1_1.dll E:/Local/tmp/prj/cocos2d4-prj/Faded/proj.win32/bin/Faded/RelWithDebInfo/libcrypto-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\Local\Applications\Cmake\bin\cmake.exe -E copy_if_different E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/uv/prebuilt/win32/uv.dll E:/Local/tmp/prj/cocos2d4-prj/Faded/proj.win32/bin/Faded/RelWithDebInfo/uv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\Local\Applications\Cmake\bin\cmake.exe -E copy_if_different E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/websockets/prebuilt/win32/websockets.dll E:/Local/tmp/prj/cocos2d4-prj/Faded/proj.win32/bin/Faded/RelWithDebInfo/websockets.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\Local\Applications\Cmake\bin\cmake.exe -E copy_if_different E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/curl/prebuilt/win32/libcurl.dll E:/Local/tmp/prj/cocos2d4-prj/Faded/proj.win32/bin/Faded/RelWithDebInfo/libcurl.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\Local\Applications\Cmake\bin\cmake.exe -E copy_if_different E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/win32-specific/gles/prebuilt/glew32.dll E:/Local/tmp/prj/cocos2d4-prj/Faded/proj.win32/bin/Faded/RelWithDebInfo/glew32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\Local\Applications\Cmake\bin\cmake.exe -E copy_if_different E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/win32-specific/icon/prebuilt/iconv.dll E:/Local/tmp/prj/cocos2d4-prj/Faded/proj.win32/bin/Faded/RelWithDebInfo/iconv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\Local\Applications\Cmake\bin\cmake.exe -E copy_if_different E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/win32-specific/MP3Decoder/prebuilt/libmpg123.dll E:/Local/tmp/prj/cocos2d4-prj/Faded/proj.win32/bin/Faded/RelWithDebInfo/libmpg123.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\Local\Applications\Cmake\bin\cmake.exe -E copy_if_different E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/win32-specific/OggDecoder/prebuilt/libogg.dll E:/Local/tmp/prj/cocos2d4-prj/Faded/proj.win32/bin/Faded/RelWithDebInfo/libogg.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\Local\Applications\Cmake\bin\cmake.exe -E copy_if_different E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbis.dll E:/Local/tmp/prj/cocos2d4-prj/Faded/proj.win32/bin/Faded/RelWithDebInfo/libvorbis.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\Local\Applications\Cmake\bin\cmake.exe -E copy_if_different E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbisfile.dll E:/Local/tmp/prj/cocos2d4-prj/Faded/proj.win32/bin/Faded/RelWithDebInfo/libvorbisfile.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\Local\Applications\Cmake\bin\cmake.exe -E copy_if_different E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/win32-specific/OpenalSoft/prebuilt/OpenAL32.dll E:/Local/tmp/prj/cocos2d4-prj/Faded/proj.win32/bin/Faded/RelWithDebInfo/OpenAL32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\Local\Applications\Cmake\bin\cmake.exe -E copy_if_different E:/Local/tmp/prj/cocos2d4-prj/Faded/cocos2d/external/zlib/../win32-specific/zlib/prebuilt/zlib1.dll E:/Local/tmp/prj/cocos2d4-prj/Faded/proj.win32/bin/Faded/RelWithDebInfo/zlib1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>lib\RelWithDebInfo\cocos2d.lib;lib\RelWithDebInfo\external.lib;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\Box2D\prebuilt\win32\release\libbox2d.lib;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\chipmunk\prebuilt\win32\release-lib\libchipmunk.lib;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\freetype2\prebuilt\win32\freetype.lib;lib\RelWithDebInfo\ext_recast.lib;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\bullet\prebuilt\win32\release\libbullet.lib;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\jpeg\prebuilt\win32\libjpeg.lib;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\webp\prebuilt\win32\libwebp.lib;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\websockets\prebuilt\win32\websockets.lib;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\openssl\prebuilt\win32\libssl.lib;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\openssl\prebuilt\win32\libcrypto.lib;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\uv\prebuilt\win32\uv_a.lib;lib\RelWithDebInfo\ext_tinyxml2.lib;lib\RelWithDebInfo\ext_xxhash.lib;lib\RelWithDebInfo\ext_xxtea.lib;lib\RelWithDebInfo\ext_clipper.lib;lib\RelWithDebInfo\ext_edtaa3func.lib;lib\RelWithDebInfo\ext_convertUTF.lib;lib\RelWithDebInfo\ext_poly2tri.lib;lib\RelWithDebInfo\ext_md5.lib;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\curl\prebuilt\win32\libcurl.lib;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\png\prebuilt\win32\libpng.lib;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\win32-specific\gles\prebuilt\glew32.lib;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\win32-specific\icon\prebuilt\libiconv.lib;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\win32-specific\MP3Decoder\prebuilt\libmpg123.lib;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\win32-specific\OggDecoder\prebuilt\libogg.lib;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbis.lib;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbisfile.lib;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\win32-specific\OpenalSoft\prebuilt\OpenAL32.lib;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\glfw3\prebuilt\win32\glfw3.lib;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\external\zlib\..\win32-specific\zlib\prebuilt\libzlib.lib;lib\RelWithDebInfo\ext_unzip.lib;ws2_32.lib;userenv.lib;psapi.lib;winmm.lib;Version.lib;Iphlpapi.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/Local/tmp/prj/cocos2d4-prj/Faded/proj.win32/RelWithDebInfo/Faded.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/Local/tmp/prj/cocos2d4-prj/Faded/proj.win32/bin/Faded/RelWithDebInfo/Faded.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\Local\tmp\prj\cocos2d4-prj\Faded\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">Building Custom Rule E:/Local/tmp/prj/cocos2d4-prj/Faded/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">setlocal
+E:\Local\Applications\Cmake\bin\cmake.exe -SE:/Local/tmp/prj/cocos2d4-prj/Faded -BE:/Local/tmp/prj/cocos2d4-prj/Faded/proj.win32 --check-stamp-file E:/Local/tmp/prj/cocos2d4-prj/Faded/proj.win32/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeCCompiler.cmake.in;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeCCompilerABI.c;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeCInformation.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeCXXCompiler.cmake.in;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeCXXCompilerABI.cpp;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeCXXInformation.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeCompilerIdDetection.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeDetermineCCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeDetermineCXXCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeDetermineCompileFeatures.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeDetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeDetermineCompilerABI.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeDetermineCompilerId.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeDetermineRCCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeDetermineSystem.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeFindBinUtils.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeGenericSystem.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeParseArguments.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeParseImplicitIncludeInfo.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeParseImplicitLinkInfo.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeParseLibraryArchitecture.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeRCCompiler.cmake.in;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeRCInformation.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeSystem.cmake.in;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeTestCCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeTestCXXCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeTestCompilerCommon.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeTestRCCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\ADSP-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\ARMCC-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\ARMClang-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\AppleClang-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\Borland-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\Clang-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\Cray-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\CrayClang-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\GHS-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\GNU-C-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\HP-C-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\IAR-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\Intel-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\LCC-C-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\MSVC-CXX.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\MSVC-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\MSVC.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\NVHPC-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\OrangeC-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\PGI-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\PathScale-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\SCO-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\TI-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\Tasking-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\Watcom-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\XL-C-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\zOS-C-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CompilerId\VS-10.vcxproj.in;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Internal\FeatureTesting.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Platform\Windows-Determine-CXX.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Platform\Windows-MSVC-CXX.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Platform\Windows.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\cmake\Modules\CocosBuildSet.cmake;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\cmake\Modules\CocosConfigDefine.cmake;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\cmake\Modules\CocosConfigDepend.cmake;E:\Local\tmp\prj\cocos2d4-prj\Faded\proj.win32\CMakeFiles\3.28.1\CMakeCCompiler.cmake;E:\Local\tmp\prj\cocos2d4-prj\Faded\proj.win32\CMakeFiles\3.28.1\CMakeCXXCompiler.cmake;E:\Local\tmp\prj\cocos2d4-prj\Faded\proj.win32\CMakeFiles\3.28.1\CMakeRCCompiler.cmake;E:\Local\tmp\prj\cocos2d4-prj\Faded\proj.win32\CMakeFiles\3.28.1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">E:\Local\tmp\prj\cocos2d4-prj\Faded\proj.win32\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|win32'">Building Custom Rule E:/Local/tmp/prj/cocos2d4-prj/Faded/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|win32'">setlocal
+E:\Local\Applications\Cmake\bin\cmake.exe -SE:/Local/tmp/prj/cocos2d4-prj/Faded -BE:/Local/tmp/prj/cocos2d4-prj/Faded/proj.win32 --check-stamp-file E:/Local/tmp/prj/cocos2d4-prj/Faded/proj.win32/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeCCompiler.cmake.in;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeCCompilerABI.c;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeCInformation.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeCXXCompiler.cmake.in;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeCXXCompilerABI.cpp;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeCXXInformation.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeCompilerIdDetection.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeDetermineCCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeDetermineCXXCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeDetermineCompileFeatures.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeDetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeDetermineCompilerABI.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeDetermineCompilerId.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeDetermineRCCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeDetermineSystem.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeFindBinUtils.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeGenericSystem.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeParseArguments.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeParseImplicitIncludeInfo.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeParseImplicitLinkInfo.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeParseLibraryArchitecture.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeRCCompiler.cmake.in;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeRCInformation.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeSystem.cmake.in;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeTestCCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeTestCXXCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeTestCompilerCommon.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeTestRCCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\ADSP-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\ARMCC-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\ARMClang-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\AppleClang-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\Borland-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\Clang-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\Cray-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\CrayClang-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\GHS-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\GNU-C-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\HP-C-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\IAR-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\Intel-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\LCC-C-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\MSVC-CXX.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\MSVC-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\MSVC.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\NVHPC-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\OrangeC-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\PGI-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\PathScale-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\SCO-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\TI-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\Tasking-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\Watcom-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\XL-C-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\zOS-C-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CompilerId\VS-10.vcxproj.in;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Internal\FeatureTesting.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Platform\Windows-Determine-CXX.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Platform\Windows-MSVC-CXX.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Platform\Windows.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\cmake\Modules\CocosBuildSet.cmake;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\cmake\Modules\CocosConfigDefine.cmake;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\cmake\Modules\CocosConfigDepend.cmake;E:\Local\tmp\prj\cocos2d4-prj\Faded\proj.win32\CMakeFiles\3.28.1\CMakeCCompiler.cmake;E:\Local\tmp\prj\cocos2d4-prj\Faded\proj.win32\CMakeFiles\3.28.1\CMakeCXXCompiler.cmake;E:\Local\tmp\prj\cocos2d4-prj\Faded\proj.win32\CMakeFiles\3.28.1\CMakeRCCompiler.cmake;E:\Local\tmp\prj\cocos2d4-prj\Faded\proj.win32\CMakeFiles\3.28.1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">E:\Local\tmp\prj\cocos2d4-prj\Faded\proj.win32\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">Building Custom Rule E:/Local/tmp/prj/cocos2d4-prj/Faded/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">setlocal
+E:\Local\Applications\Cmake\bin\cmake.exe -SE:/Local/tmp/prj/cocos2d4-prj/Faded -BE:/Local/tmp/prj/cocos2d4-prj/Faded/proj.win32 --check-stamp-file E:/Local/tmp/prj/cocos2d4-prj/Faded/proj.win32/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeCCompiler.cmake.in;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeCCompilerABI.c;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeCInformation.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeCXXCompiler.cmake.in;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeCXXCompilerABI.cpp;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeCXXInformation.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeCompilerIdDetection.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeDetermineCCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeDetermineCXXCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeDetermineCompileFeatures.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeDetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeDetermineCompilerABI.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeDetermineCompilerId.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeDetermineRCCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeDetermineSystem.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeFindBinUtils.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeGenericSystem.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeParseArguments.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeParseImplicitIncludeInfo.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeParseImplicitLinkInfo.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeParseLibraryArchitecture.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeRCCompiler.cmake.in;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeRCInformation.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeSystem.cmake.in;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeTestCCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeTestCXXCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeTestCompilerCommon.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeTestRCCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\ADSP-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\ARMCC-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\ARMClang-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\AppleClang-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\Borland-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\Clang-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\Cray-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\CrayClang-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\GHS-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\GNU-C-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\HP-C-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\IAR-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\Intel-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\LCC-C-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\MSVC-CXX.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\MSVC-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\MSVC.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\NVHPC-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\OrangeC-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\PGI-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\PathScale-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\SCO-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\TI-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\Tasking-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\Watcom-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\XL-C-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\zOS-C-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CompilerId\VS-10.vcxproj.in;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Internal\FeatureTesting.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Platform\Windows-Determine-CXX.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Platform\Windows-MSVC-CXX.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Platform\Windows.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\cmake\Modules\CocosBuildSet.cmake;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\cmake\Modules\CocosConfigDefine.cmake;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\cmake\Modules\CocosConfigDepend.cmake;E:\Local\tmp\prj\cocos2d4-prj\Faded\proj.win32\CMakeFiles\3.28.1\CMakeCCompiler.cmake;E:\Local\tmp\prj\cocos2d4-prj\Faded\proj.win32\CMakeFiles\3.28.1\CMakeCXXCompiler.cmake;E:\Local\tmp\prj\cocos2d4-prj\Faded\proj.win32\CMakeFiles\3.28.1\CMakeRCCompiler.cmake;E:\Local\tmp\prj\cocos2d4-prj\Faded\proj.win32\CMakeFiles\3.28.1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">E:\Local\tmp\prj\cocos2d4-prj\Faded\proj.win32\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">Building Custom Rule E:/Local/tmp/prj/cocos2d4-prj/Faded/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">setlocal
+E:\Local\Applications\Cmake\bin\cmake.exe -SE:/Local/tmp/prj/cocos2d4-prj/Faded -BE:/Local/tmp/prj/cocos2d4-prj/Faded/proj.win32 --check-stamp-file E:/Local/tmp/prj/cocos2d4-prj/Faded/proj.win32/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeCCompiler.cmake.in;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeCCompilerABI.c;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeCInformation.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeCXXCompiler.cmake.in;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeCXXCompilerABI.cpp;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeCXXInformation.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeCompilerIdDetection.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeDetermineCCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeDetermineCXXCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeDetermineCompileFeatures.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeDetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeDetermineCompilerABI.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeDetermineCompilerId.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeDetermineRCCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeDetermineSystem.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeFindBinUtils.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeGenericSystem.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeParseArguments.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeParseImplicitIncludeInfo.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeParseImplicitLinkInfo.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeParseLibraryArchitecture.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeRCCompiler.cmake.in;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeRCInformation.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeSystem.cmake.in;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeTestCCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeTestCXXCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeTestCompilerCommon.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CMakeTestRCCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\ADSP-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\ARMCC-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\ARMClang-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\AppleClang-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\Borland-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\Clang-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\Cray-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\CrayClang-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\GHS-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\GNU-C-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\HP-C-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\IAR-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\Intel-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\LCC-C-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\MSVC-CXX.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\MSVC-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\MSVC.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\NVHPC-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\OrangeC-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\PGI-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\PathScale-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\SCO-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\TI-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\Tasking-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\Watcom-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\XL-C-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\zOS-C-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\CompilerId\VS-10.vcxproj.in;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Internal\FeatureTesting.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Platform\Windows-Determine-CXX.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Platform\Windows-MSVC-CXX.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Platform\Windows.cmake;E:\Local\Applications\Cmake\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\cmake\Modules\CocosBuildSet.cmake;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\cmake\Modules\CocosConfigDefine.cmake;E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\cmake\Modules\CocosConfigDepend.cmake;E:\Local\tmp\prj\cocos2d4-prj\Faded\proj.win32\CMakeFiles\3.28.1\CMakeCCompiler.cmake;E:\Local\tmp\prj\cocos2d4-prj\Faded\proj.win32\CMakeFiles\3.28.1\CMakeCXXCompiler.cmake;E:\Local\tmp\prj\cocos2d4-prj\Faded\proj.win32\CMakeFiles\3.28.1\CMakeRCCompiler.cmake;E:\Local\tmp\prj\cocos2d4-prj\Faded\proj.win32\CMakeFiles\3.28.1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">E:\Local\tmp\prj\cocos2d4-prj\Faded\proj.win32\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\Local\tmp\prj\cocos2d4-prj\Faded\Classes\AppDelegate.h" />
+    <ClInclude Include="E:\Local\tmp\prj\cocos2d4-prj\Faded\Classes\HelloWorldScene.h" />
+    <ClInclude Include="E:\Local\tmp\prj\cocos2d4-prj\Faded\proj.win32\main.h" />
+    <ClInclude Include="E:\Local\tmp\prj\cocos2d4-prj\Faded\proj.win32\resource.h" />
+    <ClCompile Include="E:\Local\tmp\prj\cocos2d4-prj\Faded\Classes\AppDelegate.cpp" />
+    <ClCompile Include="E:\Local\tmp\prj\cocos2d4-prj\Faded\Classes\HelloWorldScene.cpp" />
+    <ClCompile Include="E:\Local\tmp\prj\cocos2d4-prj\Faded\proj.win32\main.cpp" />
+    <ResourceCompile Include="E:\Local\tmp\prj\cocos2d4-prj\Faded\proj.win32\game.rc" />
+    <ClInclude Include="E:\Local\tmp\prj\cocos2d4-prj\Faded\Resources\CloseNormal.png" />
+    <ClInclude Include="E:\Local\tmp\prj\cocos2d4-prj\Faded\Resources\CloseSelected.png" />
+    <ClInclude Include="E:\Local\tmp\prj\cocos2d4-prj\Faded\Resources\HelloWorld.png" />
+    <ClInclude Include="E:\Local\tmp\prj\cocos2d4-prj\Faded\Resources\fonts\Marker Felt.ttf" />
+    <ClInclude Include="E:\Local\tmp\prj\cocos2d4-prj\Faded\Resources\fonts\arial.ttf" />
+    <ClInclude Include="E:\Local\tmp\prj\cocos2d4-prj\Faded\Resources\res\.gitkeep" />
+    <ClCompile Include="E:\Local\tmp\prj\cocos2d4-prj\Faded\cocos2d\cocos\precheader.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\Local\tmp\prj\cocos2d4-prj\Faded\proj.win32\ZERO_CHECK.vcxproj">
+      <Project>{D2192B65-5E19-3196-98CB-962BC95AEB8C}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Local\tmp\prj\cocos2d4-prj\Faded\proj.win32\SYNC_RESOURCE-Faded.vcxproj">
+      <Project>{4AF17618-5E5F-3A51-ADF6-4A8EF9A7ECAD}</Project>
+      <Name>SYNC_RESOURCE-Faded</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Local\tmp\prj\cocos2d4-prj\Faded\proj.win32\engine\cocos\core\cocos2d.vcxproj">
+      <Project>{56F403FA-7EC6-3B70-9D46-520A83343C7C}</Project>
+      <Name>cocos2d</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Local\tmp\prj\cocos2d4-prj\Faded\proj.win32\engine\external\clipper\ext_clipper.vcxproj">
+      <Project>{69017181-F9D8-3EE5-97D1-640D17607CB0}</Project>
+      <Name>ext_clipper</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Local\tmp\prj\cocos2d4-prj\Faded\proj.win32\engine\external\ConvertUTF\ext_convertUTF.vcxproj">
+      <Project>{4278520A-C788-3680-BDF7-61536DDD29FB}</Project>
+      <Name>ext_convertUTF</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Local\tmp\prj\cocos2d4-prj\Faded\proj.win32\engine\external\edtaa3func\ext_edtaa3func.vcxproj">
+      <Project>{9E289A29-BA37-316C-A1C0-417DACD5CB8D}</Project>
+      <Name>ext_edtaa3func</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Local\tmp\prj\cocos2d4-prj\Faded\proj.win32\engine\external\md5\ext_md5.vcxproj">
+      <Project>{0F90FCE8-57FA-3EBD-878E-72A809DC0522}</Project>
+      <Name>ext_md5</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Local\tmp\prj\cocos2d4-prj\Faded\proj.win32\engine\external\poly2tri\ext_poly2tri.vcxproj">
+      <Project>{03505A13-3CD9-3F6E-94EE-6D570B3FDAA1}</Project>
+      <Name>ext_poly2tri</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Local\tmp\prj\cocos2d4-prj\Faded\proj.win32\engine\external\recast\ext_recast.vcxproj">
+      <Project>{EE98E1CF-15F5-32F2-8861-4EEA72CDEFDC}</Project>
+      <Name>ext_recast</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Local\tmp\prj\cocos2d4-prj\Faded\proj.win32\engine\external\tinyxml2\ext_tinyxml2.vcxproj">
+      <Project>{E583EFB3-B100-3F75-89AB-56BD41951BDA}</Project>
+      <Name>ext_tinyxml2</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Local\tmp\prj\cocos2d4-prj\Faded\proj.win32\engine\external\unzip\ext_unzip.vcxproj">
+      <Project>{3B611405-64E0-3768-8598-13A8CB24ED1B}</Project>
+      <Name>ext_unzip</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Local\tmp\prj\cocos2d4-prj\Faded\proj.win32\engine\external\xxhash\ext_xxhash.vcxproj">
+      <Project>{AC7BEF19-0A1B-3793-B449-5B62ACE07CF5}</Project>
+      <Name>ext_xxhash</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Local\tmp\prj\cocos2d4-prj\Faded\proj.win32\engine\external\xxtea\ext_xxtea.vcxproj">
+      <Project>{D7A32BAA-0795-34EE-A3F1-9DF3D73D0AAE}</Project>
+      <Name>ext_xxtea</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Local\tmp\prj\cocos2d4-prj\Faded\proj.win32\engine\external\external.vcxproj">
+      <Project>{63EF3D5B-0383-369C-A7A0-9FC2E93AF86F}</Project>
+      <Name>external</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
